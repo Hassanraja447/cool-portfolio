@@ -1,0 +1,30 @@
+
+
+.header {
+    grid-column: 1 / -1;
+    background-color: $grey-bg;
+}
+.content {
+    grid-column: center-start / center-end;
+    grid-row: 2;
+    background-color: teal;
+
+}
+.portfolio {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    background-color: $grey-bg;
+
+}
+.about {
+grid-column: center-start / center-end;
+grid-row: 4;
+background-color: goldenrod;
+
+}
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 5;
+    background-color: orangered;
+
+}
