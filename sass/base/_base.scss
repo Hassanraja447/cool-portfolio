@@ -22,14 +22,19 @@ body {
     font-family: $primary-font;
     font-weight: 400;
     color: $color-text;
+    background-color: $grey-bg;
+
 }
 
 
 .container {
-    background-color: #fff;
-
+    background-color: $grey-bg;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(auto-fit, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]  minmax(6rem, 1fr)  [full-end];
-    grid-template-rows: 400px repeat(4, min-content);
+    grid-template-rows: 400px repeat(5, min-content);
+    grid-auto-rows: auto;
+    grid-row-gap: 8rem;
    
 }

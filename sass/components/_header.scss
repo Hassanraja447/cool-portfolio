@@ -2,16 +2,21 @@
 
 .header {
     padding : 5rem 13rem;
-    display: flex;
+    display: grid;
+    grid-row-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+
     
     &__logo {
-
+        grid-column: 1 / 2;
+        
     }
 }
 .social {
 
     list-style: none;
-    margin-left: auto;
+    grid-column: 2 / -1;
+    justify-self: end;
 
     &__link {
         margin-left : 2rem;
@@ -21,23 +26,74 @@
 
         height: 2rem;
         width: 2rem;
-
-        &--facebook {
         fill: #686868;
+        transition: all .2s;
+        &--facebook2 {
+
+            
+            &:hover {
+                fill: #3b5998;
+            }
             
         }
         &--twitter {
-        fill: #686868;
-            
+            &:hover {
+                fill:  #1da1f2;
+            }
         }
         &--github {
-        fill: #686868;
-            
+            &:hover {
+                fill: #000;
+            }
         }
         &--linkedin {
-        fill: #686868;
-            
+            &:hover {
+                fill: #007bb5;
+            }
         }
     }
 
+}
+
+.slider {
+    
+  grid-row: 2;
+  grid-column: 1 /-1;
+  justify-self: stretch;
+
+
+  .holder {
+  list-style: none;
+
+  }
+    &__image {
+
+
+        &-1 {
+
+            // height: 40rem;
+            // width: 94rem;
+            // display: block;
+        }
+    }
+}
+
+.arrow-right, .arrow-left {
+    grid-row: 2;
+    z-index: 2;
+    grid-column: 1/2;
+}
+.arrow-right {
+    grid-column: 2 /-1;
+}
+.icon-right, .icon-left {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.icon-right {
+   
+    
+}
+.icon-left {
+   
 }

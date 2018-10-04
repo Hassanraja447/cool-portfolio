@@ -12,13 +12,18 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #444343; }
+  color: #444343;
+  background-color: #e2e2e2; }
 
 .container {
-  background-color: #fff;
+  background-color: #e2e2e2;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(auto-fit, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: 400px repeat(4, min-content); }
+  grid-template-rows: 400px repeat(5, min-content);
+  grid-auto-rows: auto;
+  grid-row-gap: 8rem; }
 
 .header__logo {
   font-size: 1.8rem;
@@ -27,46 +32,76 @@ body {
 
 .header {
   padding: 5rem 13rem;
-  display: flex; }
+  display: grid;
+  grid-row-gap: 5rem;
+  grid-template-columns: repeat(2, 1fr); }
+  .header__logo {
+    grid-column: 1 / 2; }
 
 .social {
   list-style: none;
-  margin-left: auto; }
+  grid-column: 2 / -1;
+  justify-self: end; }
   .social__link {
     margin-left: 2rem;
     text-decoration: none; }
   .social__icon {
     height: 2rem;
-    width: 2rem; }
-    .social__icon--facebook {
-      fill: #686868; }
-    .social__icon--twitter {
-      fill: #686868; }
-    .social__icon--github {
-      fill: #686868; }
-    .social__icon--linkedin {
-      fill: #686868; }
+    width: 2rem;
+    fill: #686868;
+    transition: all .2s; }
+    .social__icon--facebook2:hover {
+      fill: #3b5998; }
+    .social__icon--twitter:hover {
+      fill: #1da1f2; }
+    .social__icon--github:hover {
+      fill: #000; }
+    .social__icon--linkedin:hover {
+      fill: #007bb5; }
+
+.slider {
+  grid-row: 2;
+  grid-column: 1 /-1;
+  justify-self: stretch; }
+  .slider .holder {
+    list-style: none; }
+
+.arrow-right, .arrow-left {
+  grid-row: 2;
+  z-index: 2;
+  grid-column: 1/2; }
+
+.arrow-right {
+  grid-column: 2 /-1; }
+
+.icon-right, .icon-left {
+  height: 3.5rem;
+  width: 3.5rem; }
 
 .header {
   grid-column: 1 / -1;
   background-color: #e2e2e2; }
 
+.slider {
+  grid-row: 2; }
+
 .content {
   grid-column: center-start / center-end;
-  grid-row: 2;
+  grid-row: 3;
+  margin-top: 4rem;
   background-color: teal; }
 
 .portfolio {
   grid-column: 1 / -1;
-  grid-row: 3;
+  grid-row: 4;
   background-color: #e2e2e2; }
 
 .about {
   grid-column: center-start / center-end;
-  grid-row: 4;
+  grid-row: 5;
   background-color: goldenrod; }
 
 .footer {
   grid-column: 1 / -1;
-  grid-row: 5;
+  grid-row: 6;
   background-color: orangered; }
