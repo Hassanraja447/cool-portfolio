@@ -50,7 +50,7 @@ body {
     width: 2rem;
     fill: #686868;
     transition: all .2s; }
-    .social__icon--facebook2:hover {
+    .social__icon--facebook:hover {
       fill: #3b5998; }
     .social__icon--twitter:hover {
       fill: #1da1f2; }
@@ -62,9 +62,36 @@ body {
 .slider {
   grid-row: 2;
   grid-column: 1 /-1;
-  justify-self: stretch; }
+  justify-self: stretch;
+  display: flex;
+  flex-direction: column; }
   .slider .holder {
     list-style: none; }
+  .slider__control {
+    grid-row: 3;
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center; }
+    .slider__control .icon-controller {
+      height: 8px;
+      width: 8px; }
+    .slider__control--2 {
+      fill: #727272; }
+
+.control {
+  margin: 1rem 1rem;
+  align-self: center; }
+  .control__list {
+    list-style: none;
+    display: flex; }
+  .control__item {
+    margin-left: 3px; }
+  .control .icon__controller {
+    height: 1.2rem;
+    width: 1.2rem;
+    fill: #d1d1d1; }
+    .control .icon__controller--2 {
+      fill: #727272; }
 
 .arrow-right, .arrow-left {
   grid-row: 2;
@@ -72,11 +99,20 @@ body {
   grid-column: 1/2; }
 
 .arrow-right {
-  grid-column: 2 /-1; }
+  grid-column: 2 /-1;
+  align-self: center;
+  justify-self: end;
+  margin-right: 2rem; }
+
+.arrow-left {
+  align-self: center;
+  justify-self: start;
+  margin-left: 2rem; }
 
 .icon-right, .icon-left {
   height: 3.5rem;
-  width: 3.5rem; }
+  width: 3.5rem;
+  fill: #e2e2e2; }
 
 .header {
   grid-column: 1 / -1;
