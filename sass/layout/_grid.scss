@@ -8,10 +8,9 @@
     grid-row: 2;
  }
 .content {
-    grid-column: center-start / center-end;
+    grid-column: 1/ -1;
     grid-row: 3;
-    margin-top: 4rem;
-    background-color: teal;
+    background-color: #fff;
 
 }
 .portfolio {

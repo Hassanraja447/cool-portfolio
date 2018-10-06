@@ -6,3 +6,30 @@
     
     }
 }
+
+
+.heading {
+    &__primary {
+        font-size: 1.8rem;
+    }
+
+    &__secondary {
+      
+        font-size: 4.5rem;
+
+    }
+
+}
+.features {
+    &__title {
+        
+    }
+
+    &__heading {
+        font-size: 1.6rem;
+    }
+    &__text {
+
+        font-size: 1.2rem;
+    }
+}
