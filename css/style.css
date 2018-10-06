@@ -30,6 +30,18 @@ body {
   font-style: italic;
   letter-spacing: .3px; }
 
+.heading__primary {
+  font-size: 1.8rem; }
+
+.heading__secondary {
+  font-size: 4.5rem; }
+
+.features__heading {
+  font-size: 1.6rem; }
+
+.features__text {
+  font-size: 1.2rem; }
+
 .header {
   padding: 5rem 13rem;
   display: grid;
@@ -122,10 +134,9 @@ body {
   grid-row: 2; }
 
 .content {
-  grid-column: center-start / center-end;
+  grid-column: 1/ -1;
   grid-row: 3;
-  margin-top: 4rem;
-  background-color: teal; }
+  background-color: #fff; }
 
 .portfolio {
   grid-column: 1 / -1;
@@ -141,3 +152,30 @@ body {
   grid-column: 1 / -1;
   grid-row: 6;
   background-color: orangered; }
+
+.content {
+  padding: 5rem 13rem;
+  margin-top: 4rem;
+  display: grid;
+  grid-column-gap: 5rem;
+  grid-row-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr); }
+
+.heading {
+  grid-column: 1 / -1;
+  justify-self: center; }
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem; }
+  .features .title {
+    display: flex;
+    align-items: center; }
+  .features__icon {
+    height: 1.6rem;
+    width: 1.5rem; }
+  .features__heading {
+    margin-left: 1rem; }
+  .features__text {
+    margin-top: 1.5rem; }
