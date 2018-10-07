@@ -19,10 +19,10 @@
     background-color: $grey-bg;
 
 }
-.about {
-grid-column: center-start / center-end;
+.contact {
+grid-column: 1 / -1;
 grid-row: 5;
-background-color: goldenrod;
+
 
 }
 .footer {

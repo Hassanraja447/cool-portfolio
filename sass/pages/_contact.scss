@@ -1,0 +1,53 @@
+
+
+.contact {
+
+    padding : 1rem 13rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 3rem;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 46rem ;
+    height: 5rem;
+    margin-bottom: 2rem;
+    color: #7f7f7f;
+    font-style: italic;
+    
+
+}
+textarea{
+    width: 46rem;
+    margin-bottom: 3rem;
+    resize: none;
+    
+    
+}
+input, textarea {
+    padding: 2rem 4rem;
+    border-style: none;
+    background-color: #ebebeb;
+    color: #7f7f7f;
+    font-size: 1.8rem;
+
+
+
+
+}
+.btn {
+    background-color: #ebebeb;
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    color: #7f7f7f;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
