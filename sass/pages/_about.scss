@@ -1,0 +1,67 @@
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.profile {
+    
+    &__box {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+    &__image {
+        height: 215px;
+        width: 200px;
+        flex: 0 0 40%;
+    }
+    &__author-detail {
+        padding : 1rem 2rem;
+        margin-left: 1rem;
+    }
+    &__name {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    &__description {
+        font-size: 1.4rem;
+    }
+}
+.author-contact {
+    margin-bottom: 3.5rem;
+    font-size: 1.6rem;
+    color: #242424;
+
+
+    &__title {
+        font-style: italic;
+        color : #b1b1b1;
+        font-size: 1.8rem;
+        margin-right: 8px;
+
+
+    }
+    &__no {
+    }
+    &__email {
+
+    }
+}
+
+.social-contacts {
+    font-size: 1.6rem;
+    &__list {
+        font-size: 1.6rem;
+    }
+    &__title {
+        color : #b1b1b1;
+        font-size: 1.8rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: #242424;
+        font-style: italic;
+        margin-left: 8px;
+        
+    }
+}

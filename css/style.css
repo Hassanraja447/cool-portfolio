@@ -37,10 +37,10 @@ body {
   font-size: 4.5rem; }
 
 .features__heading {
-  font-size: 1.6rem; }
+  font-size: 1.8rem; }
 
 .features__text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.5; }
 
 .header {
@@ -152,6 +152,54 @@ body {
   grid-column: 1 / -1;
   grid-row: 6;
   background-color: orangered; }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.profile__box {
+  display: flex;
+  margin-bottom: 3rem; }
+
+.profile__image {
+  height: 215px;
+  width: 200px;
+  flex: 0 0 40%; }
+
+.profile__author-detail {
+  padding: 1rem 2rem;
+  margin-left: 1rem; }
+
+.profile__name {
+  font-size: 1.8rem;
+  margin-bottom: 8px; }
+
+.profile__description {
+  font-size: 1.4rem; }
+
+.author-contact {
+  margin-bottom: 3.5rem;
+  font-size: 1.6rem;
+  color: #242424; }
+  .author-contact__title {
+    font-style: italic;
+    color: #b1b1b1;
+    font-size: 1.8rem;
+    margin-right: 8px; }
+
+.social-contacts {
+  font-size: 1.6rem; }
+  .social-contacts__list {
+    font-size: 1.6rem; }
+  .social-contacts__title {
+    color: #b1b1b1;
+    font-size: 1.8rem; }
+  .social-contacts__link {
+    text-decoration: none;
+    color: #242424;
+    font-style: italic;
+    margin-left: 8px; }
 
 .contact {
   padding: 1rem 13rem;
