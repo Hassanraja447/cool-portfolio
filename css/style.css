@@ -150,8 +150,35 @@ body {
 
 .footer {
   grid-column: 1 / -1;
-  grid-row: 6;
-  background-color: orangered; }
+  grid-row: 6; }
+
+.footer {
+  padding: 4rem 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  border-top: 1px black solid; }
+  .footer .copy {
+    font-size: 1.4rem; }
+  .footer__social {
+    list-style: none; }
+    .footer__social__link {
+      margin-left: 2rem;
+      text-decoration: none; }
+    .footer__social__icon {
+      height: 2rem;
+      width: 2rem;
+      fill: #686868;
+      transition: all .2s; }
+      .footer__social__icon--facebook:hover {
+        fill: #3b5998; }
+      .footer__social__icon--twitter:hover {
+        fill: #1da1f2; }
+      .footer__social__icon--github:hover {
+        fill: #000; }
+      .footer__social__icon--linkedin:hover {
+        fill: #007bb5; }
 
 .about {
   display: flex;

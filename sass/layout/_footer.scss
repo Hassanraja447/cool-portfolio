@@ -1,0 +1,56 @@
+.footer {
+    padding: 4rem 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    border-top: 1px black solid;
+
+    .copy {
+        font-size: 1.4rem;
+    }
+
+    &__social {
+
+        list-style: none;
+        // justify-self: flex-end;
+        
+        &__link {
+            margin-left : 2rem;
+            text-decoration: none;
+        }
+        &__icon {
+    
+            height: 2rem;
+            width: 2rem;
+            fill: #686868;
+            transition: all .2s;
+            &--facebook {
+                
+                &:hover {
+                    fill: #3b5998;
+    
+                }
+                
+            }
+            &--twitter {
+                &:hover {
+                    fill:  #1da1f2;
+                }
+            }
+            &--github {
+                &:hover {
+                    fill: #000;
+                }
+            }
+            &--linkedin {
+                &:hover {
+                    fill: #007bb5;
+                }
+            }
+        }
+    
+    }
+    
+}
+
