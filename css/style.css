@@ -21,120 +21,46 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(auto-fit, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: 400px repeat(5, min-content);
-  grid-auto-rows: auto;
   grid-row-gap: 8rem; }
-
-.header__logo {
-  font-size: 1.8rem;
-  font-style: italic;
-  letter-spacing: .3px; }
-
-.heading__primary {
-  font-size: 1.8rem; }
-
-.heading__secondary {
-  font-size: 4.5rem; }
-
-.features__heading {
-  font-size: 1.8rem; }
-
-.features__text {
-  font-size: 1.4rem;
-  line-height: 1.5; }
 
 .header {
   padding: 5rem 13rem;
   display: grid;
   grid-row-gap: 5rem;
   grid-template-columns: repeat(2, 1fr); }
-  .header__logo {
-    grid-column: 1 / 2; }
-
-.social {
-  list-style: none;
-  grid-column: 2 / -1;
-  justify-self: end; }
-  .social__link {
-    margin-left: 2rem;
-    text-decoration: none; }
-  .social__icon {
-    height: 2rem;
-    width: 2rem;
-    fill: #686868;
-    transition: all .2s; }
-    .social__icon--facebook:hover {
-      fill: #3b5998; }
-    .social__icon--twitter:hover {
-      fill: #1da1f2; }
-    .social__icon--github:hover {
-      fill: #000; }
-    .social__icon--linkedin:hover {
-      fill: #007bb5; }
-
-.slider {
-  grid-row: 2;
-  grid-column: 1 /-1;
-  justify-self: stretch;
-  display: flex;
-  flex-direction: column; }
-  .slider .holder {
-    list-style: none; }
-  .slider__image-1 {
-    width: 100%; }
-  .slider__control {
-    grid-row: 3;
-    grid-column: 1/-1;
-    justify-self: center;
-    align-self: center; }
-    .slider__control .icon-controller {
-      height: 8px;
-      width: 8px; }
-    .slider__control--2 {
-      fill: #727272; }
-
-.control {
-  margin: 1rem 1rem;
-  align-self: center; }
-  .control__list {
+  .header__title {
+    grid-column: 1 / 2;
+    font-size: 1.8rem;
+    font-style: italic;
+    letter-spacing: .3px; }
+  .header__social-links {
     list-style: none;
-    display: flex; }
-  .control__item {
-    margin-left: 3px; }
-  .control .icon__controller {
-    height: 1.2rem;
-    width: 1.2rem;
-    fill: #d1d1d1; }
-    .control .icon__controller--2 {
-      fill: #727272; }
-
-.arrow-right, .arrow-left {
-  grid-row: 2;
-  z-index: 2;
-  grid-column: 1/2; }
-
-.arrow-right {
-  grid-column: 2 /-1;
-  align-self: center;
-  justify-self: end;
-  margin-right: 2rem; }
-
-.arrow-left {
-  align-self: center;
-  justify-self: start;
-  margin-left: 2rem; }
-
-.icon-right, .icon-left {
-  height: 3.5rem;
-  width: 3.5rem;
-  fill: #e2e2e2; }
+    grid-column: 2 / -1;
+    justify-self: end; }
+    .header__social-links .social__link {
+      margin-left: 2rem;
+      text-decoration: none; }
+    .header__social-links .social__icon {
+      height: 2rem;
+      width: 2rem;
+      fill: #686868;
+      transition: all .2s; }
+      .header__social-links .social__icon--facebook:hover {
+        fill: #3b5998; }
+      .header__social-links .social__icon--twitter:hover {
+        fill: #1da1f2; }
+      .header__social-links .social__icon--github:hover {
+        fill: #000; }
+      .header__social-links .social__icon--linkedin:hover {
+        fill: #007bb5; }
+  .header__image {
+    grid-column: 1 / -1; }
+    .header__image-1 {
+      width: 100%; }
 
 .header {
   grid-column: 1 / -1;
   background-color: #e2e2e2; }
-
-.slider {
-  grid-row: 2; }
 
 .content {
   grid-column: 1/ -1;
@@ -280,11 +206,20 @@ input, textarea {
 .heading {
   grid-column: 1 / -1;
   justify-self: center; }
+  .heading__primary {
+    font-size: 1.8rem; }
+  .heading__secondary {
+    font-size: 4.5rem; }
 
 .features {
   display: flex;
   flex-direction: column;
   margin-top: 3rem; }
+  .features__heading {
+    font-size: 1.8rem; }
+  .features__text {
+    font-size: 1.4rem;
+    line-height: 1.5; }
   .features .title {
     display: flex;
     align-items: center; }
@@ -318,9 +253,7 @@ input, textarea {
 
 .images--7 {
   grid-row: 1 / span 3;
-  grid-column: 3 / span 2;
-  background-image: url("../../img/slider-1.jpg");
-  background-size: cover; }
+  grid-column: 3 / span 2; }
 
 .slider-control {
   grid-column: 3 / span 2;

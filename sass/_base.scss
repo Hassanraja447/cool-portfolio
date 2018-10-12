@@ -33,8 +33,6 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(auto-fit, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]  minmax(6rem, 1fr)  [full-end];
-    grid-template-rows: 400px repeat(5, min-content);
-    grid-auto-rows: auto;
     grid-row-gap: 8rem;
    
 }
