@@ -12,19 +12,37 @@
     grid-column: 1 / -1;
     justify-self: center;
     
+    &__primary {
+        font-size: 1.8rem;
+    }
 
+    &__secondary {
+      
+        font-size: 4.5rem;
+
+    }
 
 
 }
 
-.feature-box {
-  
-}
+
 .features {
     display: flex;
    flex-direction: column;
    margin-top: 3rem;
    
+   &__title {
+        
+}
+
+&__heading {
+    font-size: 1.8rem;
+}
+&__text {
+
+    font-size: 1.4rem;
+    line-height:1.5;
+}
    
     .title {
         display: flex;

@@ -80,6 +80,8 @@ body {
   flex-direction: column; }
   .slider .holder {
     list-style: none; }
+  .slider__image-1 {
+    width: 100%; }
   .slider__control {
     grid-row: 3;
     grid-column: 1/-1;
