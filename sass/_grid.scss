@@ -6,24 +6,24 @@
 }
 .content {
     grid-column: 1/ -1;
-    grid-row: 3;
+    grid-row: 2;
     background-color: #fff;
 
 }
 .portfolio {
     grid-column: 1 / -1;
-    grid-row: 4;
+    grid-row: 3;
     background-color: $grey-bg;
 
 }
 .contact {
 grid-column: 1 / -1;
-grid-row: 5;
+grid-row: 4;
 
 
 }
 .footer {
     grid-column: 1 / -1;
-    grid-row: 6;
+    grid-row: 5;
 
 }
