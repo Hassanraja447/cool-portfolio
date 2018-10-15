@@ -4,7 +4,8 @@
 
     padding : 1rem 13rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-rows: min-content;
     grid-column-gap: 3rem;
 
 }

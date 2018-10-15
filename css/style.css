@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(auto-fit, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: repeat(5, min-content);
+  grid-template-rows: 80vh repeat(2, min-content) 40vw min-content;
   grid-row-gap: 8rem; }
 
 .header {
@@ -110,22 +110,27 @@ body {
         fill: #007bb5; }
 
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; }
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: repeat(3, 8vw);
+  grid-row-gap: 1.5rem;
+  padding: 1rem; }
 
-.profile__box {
-  display: flex;
-  margin-bottom: 3rem; }
+.profile__picture {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2; }
 
 .profile__image {
-  height: 215px;
-  width: 200px;
-  flex: 0 0 40%; }
+  width: 100%;
+  height: 100%;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+  display: block; }
 
 .profile__author-detail {
   padding: 1rem 2rem;
-  margin-left: 1rem; }
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2; }
 
 .profile__name {
   font-size: 1.8rem;
@@ -135,6 +140,11 @@ body {
   font-size: 1.4rem; }
 
 .author-contact {
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 3.5rem;
   font-size: 1.6rem;
   color: #242424; }
@@ -143,24 +153,26 @@ body {
     color: #b1b1b1;
     font-size: 1.8rem;
     margin-right: 8px; }
-
-.social-contacts {
-  font-size: 1.6rem; }
-  .social-contacts__list {
+  .author-contact .social-contacts {
+    grid-column: 1 / -1;
+    grid-row: 4 / span 1;
     font-size: 1.6rem; }
-  .social-contacts__title {
-    color: #b1b1b1;
-    font-size: 1.8rem; }
-  .social-contacts__link {
-    text-decoration: none;
-    color: #242424;
-    font-style: italic;
-    margin-left: 8px; }
+    .author-contact .social-contacts__list {
+      font-size: 1.6rem; }
+    .author-contact .social-contacts__title {
+      color: #b1b1b1;
+      font-size: 1.8rem; }
+    .author-contact .social-contacts__link {
+      text-decoration: none;
+      color: #242424;
+      font-style: italic;
+      margin-left: 8px; }
 
 .contact {
   padding: 1rem 13rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-rows: min-content;
   grid-column-gap: 3rem; }
 
 .form-container {
@@ -210,7 +222,7 @@ input, textarea {
 
 .features-box {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-column-gap: 2rem; }
 
 .features {

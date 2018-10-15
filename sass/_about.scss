@@ -1,23 +1,31 @@
 
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows:  repeat(3, 8vw);
+    grid-row-gap: 1.5rem;
+    padding: 1rem;
+    // display: flex;
+    // flex-direction: column;
 }
 .profile {
     
-    &__box {
-        display: flex;
-        margin-bottom: 3rem;
+    &__picture {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
     }
     &__image {
-        height: 215px;
-        width: 200px;
-        flex: 0 0 40%;
+      width: 100%;
+      height: 100%;
+      -webkit-object-fit: cover;
+      object-fit: cover;
+      display: block;
     }
     &__author-detail {
         padding : 1rem 2rem;
-        margin-left: 1rem;
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2 ;
     }
     &__name {
         font-size: 1.8rem;
@@ -28,6 +36,12 @@
     }
 }
 .author-contact {
+    grid-column: 1 / -1;
+    grid-row: 3 / span 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 3.5rem;
     font-size: 1.6rem;
     color: #242424;
@@ -46,22 +60,25 @@
     &__email {
 
     }
+
+    .social-contacts {
+        grid-column: 1 / -1;
+        grid-row: 4 / span 1;
+        font-size: 1.6rem;
+        &__list {
+            font-size: 1.6rem;
+        }
+        &__title {
+            color : #b1b1b1;
+            font-size: 1.8rem;
+        }
+        &__link {
+            text-decoration: none;
+            color: #242424;
+            font-style: italic;
+            margin-left: 8px;
+            
+        }
+    }
 }
 
-.social-contacts {
-    font-size: 1.6rem;
-    &__list {
-        font-size: 1.6rem;
-    }
-    &__title {
-        color : #b1b1b1;
-        font-size: 1.8rem;
-    }
-    &__link {
-        text-decoration: none;
-        color: #242424;
-        font-style: italic;
-        margin-left: 8px;
-        
-    }
-}
