@@ -29,11 +29,9 @@ body {
 
 .container {
     background-color:#fff;
-    max-width: 1200px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(auto-fit, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]  minmax(6rem, 1fr)  [full-end];
-    grid-template-rows: 80vh repeat(2, min-content) 40vw min-content;
+    grid-template-rows: min-content repeat(2, min-content) 40vw min-content;
     grid-row-gap: 8rem;
    
 }

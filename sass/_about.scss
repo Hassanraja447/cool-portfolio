@@ -2,10 +2,10 @@
 .about {
 
     display: grid;
-    grid-template-columns: 40% auto;
-    grid-template-rows:  repeat(3, 8vw);
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    grid-template-rows: 25rem 10rem;
     grid-row-gap: 1.5rem;
-    padding: 1rem;
+    padding: 0 2vw;
     // display: flex;
     // flex-direction: column;
 }
@@ -13,14 +13,13 @@
     
     &__picture {
         grid-column: 1 / span 1;
-        grid-row: 1 / span 2;
+        grid-row: 1 / 2;
     }
     &__image {
       width: 100%;
-      height: 100%;
-      -webkit-object-fit: cover;
-      object-fit: cover;
-      display: block;
+      max-height: 100%;
+    //   object-fit: cover;
+    //   display: block;
     }
     &__author-detail {
         padding : 1rem 2rem;
@@ -37,7 +36,7 @@
 }
 .author-contact {
     grid-column: 1 / -1;
-    grid-row: 3 / span 1;
+    grid-row: 2 / span 1;
 
     display: flex;
     flex-direction: column;
@@ -63,7 +62,7 @@
 
     .social-contacts {
         grid-column: 1 / -1;
-        grid-row: 4 / span 1;
+        grid-row: 3 / span 1;
         font-size: 1.6rem;
         &__list {
             font-size: 1.6rem;
