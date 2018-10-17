@@ -8,9 +8,27 @@
 
 .form{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 1rem;
 }
+.name {
+    grid-column: 1 / -1;
+    grid-row: 1;
 
+}
+.email {
+    grid-column: 1 / -1;
+    grid-row: 2;
+
+}
+.url {
+    grid-column: 1 / -1;
+    grid-row: 3;
+}
+.description {
+    grid-column: 1 / -1 ;
+    grid-row: 4;
+}
 input {
    
     color: #7f7f7f;
@@ -36,7 +54,8 @@ input, textarea {
 
 }
 .btn {
-    justify-self: center;
+    grid-column: 2 / span 1;
+    grid-row: 5;
     background-color: #ebebeb;
     padding: 1.5rem 3rem;
     font-size: 1.8rem;
