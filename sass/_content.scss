@@ -1,30 +1,42 @@
 
 .content {
-    margin: 6rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    display: grid;
+   
+    grid-gap: 1.5rem;
+        
 }
 
 .heading {
 
     
     &__primary {
-        font-size: 1.8rem;
+        grid-row: 1;
+        font-size: 1.4rem;
+        justify-self: center;
+        align-self: center;
     }
 
     &__secondary {
-      
-        font-size: 4.5rem;
+        grid-row: 2;        
+        font-size: 1.8rem;
+        justify-self: center;
+
+        align-self: center;
+
 
     }
 
 
 }
 .features-box {
+    grid-row: 3;        
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
-    grid-auto-flow: row;
     grid-gap: 2rem;
 }
 
@@ -33,8 +45,10 @@
    flex-direction: column;
    margin-left: 2rem;
    &__title {
-        
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
 &__heading {
     font-size: 1.8rem;
@@ -43,13 +57,8 @@
 
     font-size: 1.4rem;
     line-height:1.5;
+
 }
-   
-    .title {
-        display: flex;
-        align-items: center;
-        
-    }
   
     &__icons {
 

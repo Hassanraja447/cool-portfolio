@@ -2,18 +2,15 @@
 .about {
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(25rem, 1fr));
-    grid-template-rows: 25rem 10rem;
-    grid-row-gap: 1.5rem;
-    padding: 0 2vw;
+    grid-template-rows: 80vw;
+    grid-gap: 1.5rem;
     // display: flex;
     // flex-direction: column;
 }
 .profile {
     
     &__picture {
-        grid-column: 1 / span 1;
-        grid-row: 1 / 2;
+        grid-row: 1 
     }
     &__image {
       width: 100%;
@@ -22,9 +19,10 @@
     //   display: block;
     }
     &__author-detail {
-        padding : 1rem 2rem;
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 2 ;
+        padding : 1rem;
+        grid-row:2 ;
+        display: flex;
+        flex-direction: column;
     }
     &__name {
         font-size: 1.8rem;
@@ -35,15 +33,14 @@
     }
 }
 .author-contact {
-    grid-column: 1 / -1;
-    grid-row: 2 / span 1;
+    grid-row: 3;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 3.5rem;
     font-size: 1.6rem;
     color: #242424;
+
 
 
     &__title {

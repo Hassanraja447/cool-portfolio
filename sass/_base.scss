@@ -30,9 +30,17 @@ body {
 .container {
     background-color:#fff;
     display: grid;
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(auto-fit, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]  minmax(6rem, 1fr)  [full-end];
-    grid-template-rows: min-content repeat(2, min-content) 40vw min-content;
-    grid-row-gap: 8rem;
+    grid-template-columns: repeat(12,[col-start] 1fr [col-end]);
+    grid-gap: 2rem;
+    // grid-template-columns:[full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    // grid-row-gap: 8rem;
+   
+    & > * {
+        padding: 1.5rem;
+        grid-column: col-start 1 / span 12;
+
+    }
+      
    
 }
 

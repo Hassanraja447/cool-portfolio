@@ -1,32 +1,23 @@
 
 
 .header {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
     background-color: $grey-bg;
 }
 .content {
-    grid-column: center-start / center-end;
-    grid-row: 2 / 3;
+    
     background-color: #fff;
 
 }
 .portfolio {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    
     background-color: $grey-bg;
 
 }
 .contact {
-grid-column: center-start / col-end 4;
-grid-row: 4 / 5;
 }
 .about {
-    grid-column: col-start 5 / center-end;
-    grid-row: 4 / 5;
 }
 .footer {
-    grid-column: center-start / center-end;
-    grid-row: 5;
+   
 
 }
