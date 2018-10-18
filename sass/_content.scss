@@ -7,6 +7,9 @@
     display: grid;
    
     grid-gap: 1.5rem;
+    @media(min-width: 800px){
+        grid-gap: 2.5rem;
+    }
         
 }
 
@@ -15,17 +18,22 @@
     
     &__primary {
         grid-row: 1;
-        font-size: 1.4rem;
+        font-size: var(--font-heading-secondary);
         justify-self: center;
         align-self: center;
     }
 
     &__secondary {
         grid-row: 2;        
-        font-size: 1.6rem;
+        font-size: var(--font-heading-primary);
         justify-self: center;
 
         align-self: center;
+
+        @media(min-width: 800px){
+           letter-spacing: 2px;
+        }
+           
 
 
     }
@@ -51,11 +59,11 @@
     }
 
 &__heading {
-    font-size: 1.8rem;
+    font-size: var(--font-heading-tertiary);
 }
 &__text {
 
-    font-size: 1.4rem;
+    font-size: var(--font-text);
     line-height:1.5;
 
 }

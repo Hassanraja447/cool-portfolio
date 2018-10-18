@@ -14,8 +14,18 @@
 
 }
 .contact {
+
+    @media (min-width: 700px){
+        grid-column: 1 / span 6;
+        grid-row: 4;
+    }
+    
 }
 .about {
+    @media (min-width: 700px){
+        grid-column: col-start 7 / span 6;
+        grid-row: 4;
+    }
 }
 .footer {
    

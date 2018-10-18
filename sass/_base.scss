@@ -5,6 +5,20 @@ $color-text : #444343;
 $primary-font :'Roboto', sans-serif;
 
 
+
+:root{
+    --font-heading-primary: 2rem;
+    --font-heading-secondary: 1.8rem;
+    --font-heading-tertiary: 1.6rem;
+    --font-text: 1.4rem;
+    @media(min-width: 900px){
+        --font-heading-primary: 2.5rem;
+        --font-heading-secondary: 2.2rem;
+        --font-heading-tertiary: 1.8rem;
+        --font-text: 1.6rem;
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -16,7 +30,11 @@ $primary-font :'Roboto', sans-serif;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 50%;
+
+    @media (min-width: 450px){
+        font-size: 62.5%;
+    }
 }
 body {
     font-family: $primary-font;
@@ -40,6 +58,28 @@ body {
         grid-column: col-start 1 / span 12;
 
     }
+
+    .header, .content, .portfolio, .footer {
+        @media (min-width: 800px){
+            padding: 2rem 6rem;
+        }
+        @media (min-width: 900px){
+            padding: 5rem 8rem;
+        }
+    }
+    .contact {
+        @media (min-width: 800px){
+            padding: 2rem 0 ;
+            padding-left: 4rem;
+        }
+    }
+    .about {
+        @media (min-width: 800px){
+            padding: 2rem 0 ;
+            padding-right: 4rem;
+        }
+    }
+      
       
    
 }

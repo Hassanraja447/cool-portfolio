@@ -5,12 +5,24 @@
     justify-items: center;
     grid-gap: 1rem;
 
+    @media (min-width: 450px){
+
+    }
+
     .copy {
         font-size: 1.4rem;
+        
+    @media (min-width: 450px){
+        justify-self: start;
+    }
+
     }
 
     .social {
 
+        @media (min-width: 450px){
+            justify-self: end;
+        }
         list-style: none;
         // justify-self: flex-end;
         
